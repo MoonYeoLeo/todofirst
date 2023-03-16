@@ -14,8 +14,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         // Initializing the array lists and the adapter
-        var itemlist = arrayListOf<String>()
-        var adapter =
+        val itemlist = arrayListOf<String>()
+        val adapter =
             ArrayAdapter<String>(this, android.R.layout.simple_list_item_multiple_choice, itemlist)
 
         // Adding the items to the list when the add button is pressed
@@ -25,14 +25,6 @@ class MainActivity : AppCompatActivity() {
         add.setOnClickListener {
             itemlist.add(editText.text.toString())
             listView1.adapter = adapter
-            adapter.notifyDataSetChanged()
-            // This is because every time when you add the item the input      space or the eidt text space will be cleared
-            editText.text.clear()
-        }
-        val listView2 = findViewById<ListView>(R.id.listView2)
-        add.setOnClickListener {
-            itemlist.add(editText.text.toString())
-            listView2.adapter = adapter
             adapter.notifyDataSetChanged()
             // This is because every time when you add the item the input      space or the eidt text space will be cleared
             editText.text.clear()

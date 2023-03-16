@@ -59,24 +59,24 @@
         android:text="완료" />
   </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/linearLayout1"
-        android:background="@color/by"
-        android:gravity="center"
-        android:padding="10dp"
-        android:text="오늘의 내가 할 일"
-        android:textColor="@color/black"
-        android:textSize="20dp" />
+  <TextView
+      android:id="@+id/textView1"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/linearLayout1"
+      android:background="@color/by"
+      android:gravity="center"
+      android:padding="10dp"
+      android:text="오늘의 내가 할 일"
+      android:textColor="@color/black"
+      android:textSize="20dp" />
 
-    <ListView
-        android:id="@+id/listView1"
-        android:layout_width="wrap_content"
-        android:layout_height="290dp"
-        android:layout_below="@id/textView1"
-        android:layout_marginTop="-2dp"
-        android:choiceMode="multipleChoice" />
-  </LinearLayout>
-    </RelativeLayout>
+  <ListView
+      android:id="@+id/listView1"
+      android:layout_width="wrap_content"
+      android:layout_height="290dp"
+      android:layout_below="@id/textView1"
+      android:layout_marginTop="-2dp"
+      android:choiceMode="multipleChoice" />
+
+</RelativeLayout>
