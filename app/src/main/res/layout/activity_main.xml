@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout      xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white"
+    android:weightSum="10">
+  <TextView
+      android:id="@+id/textView"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:padding="10dp"
+      android:text="오늘의 일"
+      android:textColor="@color/black"
+      android:textSize="26dp"
+      android:background="@color/purple_200"
+      />
+  <EditText
+      android:id="@+id/editText"
+      android:layout_below="@id/textView"
+      android:padding="20dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="내가 오늘 할일을 적으세요"
+      android:textColorHint="@color/black"
+      android:textColor="@color/black"/>
+
+  <LinearLayout
+      android:id="@+id/linearLayout1"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_below="@id/editText"
+      android:padding="10dp">
+    <Button
+        android:id="@+id/add"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="3dp"
+        android:text="추가"/>
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="3dp"
+        android:text="삭제"/>
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:layout_weight="1"
+        android:text="완료" />
+  </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout1"
+        android:background="@color/by"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="오늘의 내가 할 일"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="wrap_content"
+        android:layout_height="290dp"
+        android:layout_below="@id/textView1"
+        android:layout_marginTop="-2dp"
+        android:choiceMode="multipleChoice" />
+  </LinearLayout>
+    </RelativeLayout>
